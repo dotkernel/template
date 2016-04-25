@@ -1,0 +1,32 @@
+{
+  "name" : "dotkernel/dot-template",
+  "description" : "DotKernel Templating System (Standalone)",
+  "version" : "1.0",
+  "require" : {
+    "php" : ">=5.4"
+  },
+  "license" : "MIT",
+  "keywords" : [ "templating", "dot template", "dotkernel templating", "templating system" ],
+  "autoload-dev" : {
+    "psr-4" : {
+      "DotKernel\\DotTemplate\\" : "tests/"
+    }
+  },
+  "minimum-stability" : "dev",
+  "autoload" : {
+    "psr-4" : {
+      "DotKernel\\DotTemplate\\" : "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/dotkernel/dot-template"
+    }
+  ],
+  "files" : [ "src/DotTemplate.php" ],
+  "authors" : [ {
+    "name" : "DotKernel Team",
+    "email" : "team@dotkernel.com"
+  } ]
+}
