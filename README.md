@@ -2,7 +2,7 @@
 > Port of the original PHPLIB Template class by Kristian Koehntopp, NetUSE AG and was released under the LGPL.
 
 The original PHPLIB library can be downloaded from here:
--  https://sourceforge.net/projects/phplib/
+ - https://sourceforge.net/projects/phplib/
  - http://phplib.sourceforge.net/index.php3
 
 
