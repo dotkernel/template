@@ -3,19 +3,12 @@
 * This code that was derived from the original PHPLIB Template class is 
 * copyright by Kristian Koehntopp, NetUSE AG and was released under the LGPL.
 *
-* DotBoost Technologies Inc.
-* DotKernel Application Framework
-*
-* @category   DotKernel
-* @copyright  Copyright (c) 2009-2015 DotBoost Technologies Inc. (http://www.dotboost.com)
 * @license    http://www.gnu.org/copyleft/lesser.html  LGPL License 2.1
-* @version    $Id: Template.php 980 2015-06-11 13:38:03Z gabi $
 */
 
 /**
 * Template engine, based on PHPLIB Template class
-* @category   DotKernel
-* @package    DotLibrary
+* 
 * @author     Kristian Koehntopp <kris@koehntopp.de>
 * @author     DotKernel Team <team@dotkernel.com>
 */
@@ -130,15 +123,7 @@ class DotTemplate
 	 * @var array
 	 */
 	private $_endTime = array();
-	
-	/**
-	 * Singleton instance
-	 * @access protected
-	 * @static
-	 * @var DotTemplate
-	 */
-	protected static $_instance = null;
-	
+		
 	/**
 	 * Singleton pattern implementation makes 'new' unavailable
 	 * @access protected
@@ -164,33 +149,6 @@ class DotTemplate
 			}
 		}
 	}
-	
-	/**
-	 * Singleton pattern implementation makes 'clone' unavailable
-	 * @access protected
-	 * @return void
-	 */
-	protected function __clone()
-	{}
-	
-	/**
-	 * Returns an instance of Dot_View
-	 * Singleton pattern implementation
-	 * @access public
-	 * @static
-	 * @param string $root     Template root directory
-	 * @param string $unknowns How to handle unknown variables
-	 * @param array  $fallback Fallback paths
-	 * @return DotTemplate
-	 */
-	public static function getInstance($root = '.', $unknowns = 'remove', $fallback='')
-	{
-		if (null === self::$_instance) 
-		{
-			self::$_instance = new self($root, $unknowns, $fallback);
-		}
-		return self::$_instance;
-	}	
 	
 	/**
 	 * Checks that $root is a valid directory and if so sets this directory as the
