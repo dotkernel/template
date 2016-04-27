@@ -7,9 +7,13 @@ The original PHPLIB library can be downloaded from here:
 
 
 ### Example
+Use the class from the DotKernel\DotTemplate namespace
+```php
+use DotKernel\DotTemplate\DotTemplate;
+```
 Load the templating system:
 ```php
-$tpl = new Dot_Template('.', 'remove');
+$tpl = new DotTemplate('.', 'remove');
 ```
 Set the root directory
 ```php

@@ -1,17 +1,18 @@
 <?php
 /**
- * Example: example will show you how 
- * @var unknown
+ * Example: example will show you how the DotTemplate can be used
+ * 
+ * This example contains simple variable and block parsing
+ * 
  */
 include '../src/Exception/HaltException.php';
 include '../src/DotTemplate.php';
-use DotKernel\DotTemplate\DotTemplate as Dot_Template;
 
 // root directory is . 
 // remove the unknown / undefined {VARIABLES}
 // no fallback
 // no predefined page content
-$tpl = new Dot_Template('.', 'remove');
+$tpl = new DotTemplate('.', 'remove');
 // alternate version
 // using ../templates because the setRoot won't help in this case as we get file contents manually
 #$tpl = new Dot_Template('.', 'remove', '', ['tpl_main'=>file_get_contents('../templates/index.tpl')]);
